@@ -1,0 +1,27 @@
+ErrorDocument 404 /error.php
+ErrorDocument 403 /error.php
+ErrorDocument 500 /error.php
+
+Options +FollowSymlinks
+Options -Indexes
+
+<Files .htaccess>
+deny from all
+</Files>
+
+order allow,deny
+allow from all
+
+<ifModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+</ifModule>
+
+<ifModule mod_php5.c>
+	php_value zlib.output_compression 16386
+	php_value register_globals off
+	php_value session.use_trans_sid 0
+	php_value default_charset iso-8859-1
+</ifModule>

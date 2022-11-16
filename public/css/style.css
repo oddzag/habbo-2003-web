@@ -1,0 +1,540 @@
+body	{ background-image: url(../img/bg.png); background-repeat: repeat;}
+
+p { font-family: Verdana, Arial, Helvetica, sans-serif; color: #330; font-size: 10px; padding: 0; margin: 0;}
+
+h1 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; color: white; font-weight: bold; padding: 0; margin: 20px 0;}
+
+h3 { color: #600; font-size: 10px; margin: 10px 0;}
+
+h5 	{ font-size: 11px; font-weight: bold; color: #330; margin: 0 0 10px 0;}
+
+a { cursor: pointer; }
+
+p a { color:#FF6; text-decoration: underline; }
+
+ul li { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; }
+
+.links { font-family: Verdana, Arial, Helvetica, sans-serif; color: #FF6;}
+
+.index {
+	display: grid;
+	grid-template-columns: .30fr 1000px 10000px;
+	grid-template-rows: .2fr 1fr;
+	grid-column-gap: 32px;
+	grid-row-gap: 42px;
+
+	min-height: 0;
+	max-height: 0;
+}
+
+.logo { grid-area: 1 / 1 / 2 / 2; position: relative; min-width: 168px;}
+.banner { grid-area: 1 / 2 / 2 / 3; }
+#main { grid-area: 2 / 1 / 3 / 3; position: relative; display: block;}
+
+#habbo_logo {
+	background-image: url('../img/habbo_logo.png');
+	position: absolute;
+	width: 110px;
+	height: 55px;
+	left: 50%;
+  	top: 60%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#banner_box {
+	background-image: url('../img/banner_box.png');
+	position: relative;
+	width: 504px;
+	height: 72px;
+}
+
+#banner_insert {
+	background-image: url('../img/banner_insert.png');
+	position: absolute;
+	width: 468px;
+	height: 60px;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+/* --------------------- SIDEBAR --------------------- */
+
+
+.box_blue_top {
+	background-image: url('../img/boxes/box_blue_top.png');
+	margin: 0 auto;
+	display: block;
+	width: 168px;
+	height: 16px;
+}
+
+.box_blue_mid {
+	background-image: url('../img/boxes/box_blue_mid.png');
+	margin: 0 auto;
+	display: block;
+	width: 168px;
+}
+
+.box_blue_footer {
+	background-image: url('../img/boxes/box_blue_footer.png');
+	margin: 0 auto;
+	display: block;
+	width: 168px;
+	height: 14px;
+	margin-bottom: 15px;
+}
+
+#habbos_online {
+	font-weight: bold;
+	color: #96B7CC;
+	text-align: center;
+}
+
+#check_in {
+	font-weight: bold;
+	color: #FF9;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#check_in_prob {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px; 
+	color: white; 
+	font-weight: bold;
+	margin: 0 0 10px 13px;
+}
+
+.box_yellow_top {
+	background-image: url('../img/boxes/box_yellow_top.png');
+	margin: 0 auto;
+	display: block;
+	width: 168px;
+	height: 16px;
+}
+
+.box_yellow_mid {
+	background-image: url('../img/boxes/box_yellow_mid.png');
+	margin: 0 auto;
+	display: block;
+	width: 168px;
+}
+
+.box_yellow_footer {
+	background-image: url('../img/boxes/box_yellow_footer.png');
+	margin: 0 auto;
+	display: block;
+	width: 168px;
+	height: 14px;
+	margin-bottom: 15px;
+}
+#sidebar {
+	width: 168px;
+	min-height: 619px;
+	float: left;
+	margin: 19px 30px 0 8px;
+}
+
+#sidebar p {
+	padding: 0 10px;
+}
+
+#sidebar_links {
+	text-align: center;
+	display: block;
+}
+
+#sidebar_links a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #69C;
+	display: block;
+	padding-bottom: 3px;
+}
+
+/* --------------------- MAIN --------------------- */
+
+#main_content {
+	width: 500px;
+	display: inline-block;
+}
+
+#main_top {
+	background-image: url('../img/boxes/main_top.png');
+	width: 503px;
+	height: 15px;
+	margin: 0 auto;
+}
+
+#main_top.active {
+	background-image: url('../img/boxes/main_top_subnav.gif');
+	width: 503px;
+	height: 14px;
+	margin: 0 auto;
+}
+
+#main_mid {
+	background-image: url('../img/boxes/main_mid.png');
+	width: 503px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+#main_footer {
+	background-image: url('../img/boxes/main_footer.png');
+	width: 503px;
+	height: 15px;
+	margin: 0 auto;
+}
+
+#main_copyright {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-align: center;
+	color: #69C;
+}
+
+/* --------------------- NAV --------------------- */
+
+#nav {
+	width: 360px;
+	margin: 0 auto;
+	height: 19px;
+}
+
+#nav_home {
+	background-image: url('../img/nav/home.png');
+	display: inline-block;
+	width: 83px;
+	height: 19px;
+}
+
+#nav_home.active {
+	background-image: url('../img/nav/home_active.png');
+	display: inline-block;
+	width: 83px;
+	height: 19px;
+}
+
+#nav_help {
+	background-image: url('../img/nav/help.png');
+	display: inline-block;
+	width: 101px;
+	height: 19px;
+}
+
+#nav_help.active {
+	background-image: url('../img/nav/help_active.gif');
+	display: inline-block;
+	width: 101px;
+	height: 19px;
+}
+
+#nav_credits {
+	background-image: url('../img/nav/credits.gif');
+	display: inline-block;
+	width: 91px;
+	height: 19px;
+}
+
+#nav_credits.active {
+	background-image: url('../img/nav/credits_active.gif');
+	display: inline-block;
+	width: 91px;
+	height: 19px;
+}
+
+#nav_community {
+	background-image: url('../img/nav/community.png');
+	display: inline-block;
+	width: 91px;
+	height: 19px;
+}
+
+#nav_community.active {
+	background-image: url('../img/nav/community_active.png');
+	display: inline-block;
+	width: 91px;
+	height: 19px;
+}
+
+#nav_shop {
+	background-image: url('../img/nav/shop.gif');
+	display: inline-block;
+	width: 53px;
+	height: 19px;
+}
+
+#nav_shop.active {
+	background-image: url('../img/nav/shop_active.gif');
+	display: inline-block;
+	width: 53px;
+	height: 19px;
+}
+
+/* --------------------- MAIN --------------------- */
+
+.content_ruler {
+	background-image: url('../img/content_ruler.gif');
+	height: 22px;
+
+	margin: 10px auto;
+	left: 0;
+	right: 0;
+}
+
+.sub_content_ruler {
+	background-image: url('../img/content_ruler.gif');
+	height: 22px;
+
+	width: 55%;
+	margin: 10px 0;
+}
+
+#content_sub {
+	padding: 5px 20px;
+}
+
+.home {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: .25fr 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.home_banner { grid-area: 1 / 1 / 2 / 3; }
+
+.home_left {
+	grid-area: 2 / 1 / 3 / 2;
+	padding: 15px 25px 0px 20px;
+
+}
+.home_right {
+	grid-area: 2 / 2 / 3 / 3;
+	padding: 15px 25px 0px 0px;
+}
+
+#home_banner {
+	background-image: url('../img/main_banner3.png');
+	width: 469px;
+	height: 130px;
+	margin: 0 auto;
+}
+
+#check_in_button {
+	background-image: url('../img/check_in.gif');
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	margin-top: -100px;
+	margin-left: -20px;
+}
+
+#alert_wrap {
+	position: relative;
+	width: 50px;
+	height: 170px;
+	float: left;
+}
+
+#headlines_top {
+	background-image: url('../img/boxes/headlines_top.png');
+	width: 241px;
+	height: 30px;
+}
+
+#headlines_mid {
+	background-image: url('../img/boxes/headlines_mid.png');
+	width: 241px;
+	height: 2px;
+}
+
+#headlines_footer {
+	background-image: url('../img/boxes/headlines_footer.png');
+	width: 241px;
+	height: 10px;
+	margin-bottom: 20px;
+}
+
+#box_gold_top {
+	background-image: url('../img/boxes/box_gold_top.png');
+	width: 241px;
+	height: 6px;
+}
+
+#box_gold_mid {
+	background-image: url('../img/boxes/box_gold_mid.png');
+	width: 241px;
+}
+
+#box_gold_footer {
+	background-image: url('../img/boxes/box_gold_footer.png');
+	width: 241px;
+	height: 6px;
+	margin-bottom: 10px;
+}
+
+#box_brown_top {
+	background-image: url('../img/boxes/box_brown_top.png');
+	width: 241px;
+	height: 6px;
+}
+
+#box_brown_mid {
+	background-image: url('../img/boxes/box_brown_mid.png');
+	width: 241px;
+}
+
+#box_brown_footer {
+	background-image: url('../img/boxes/box_brown_footer.png');
+	width: 241px;
+	height: 6px;
+}
+
+#subnav_one {
+	background-image: url('../img/boxes/main_mid_subnav.png');
+	width: 503px;
+	padding: 0px 0px 8px 0px;
+	text-align: center;
+}
+
+#subnav_two {
+	width: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#subnav_one a,
+#subnav_two a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #000;
+}
+
+#subnav_one a {
+	font-size: 11px;
+	margin: 0 6px 0 6px;
+}
+
+#subnav_two a {
+	font-size: 10px;
+	margin-right: 20px;
+}
+
+#subnav_one a:hover,
+#subnav_two a:hover {
+	text-decoration: underline;
+}
+
+#subnav_one a.active,
+#subnav_two a.active {
+	color: #FFF;
+	font-weight: bold;
+}
+
+#navi_ruler {
+	background-image: url('../img/navi_ruler.gif');
+	width: 503px;
+	height: 2px;
+}
+
+/* --- What's Habbo Hotel? --- */
+
+#tour_links {
+	display: inline-block;
+}
+
+#tour_links a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FF6;
+	display: block;
+	padding-bottom: 10px;
+}
+
+#habboway_must_not {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #900;
+}
+
+#habboway_should {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #060;
+}
+
+#chat_left {
+	float: left;
+	width: 48%;
+}
+
+#chat_right {
+	float: right;
+	width: 48%;
+}
+
+#console_left {
+	float: left;
+	width: 53%;
+}
+
+#console_right {
+	float: right;
+	width: 43%;
+}
+
+#scam_content { font-family: Verdana, Arial, Helvetica, sans-serif; color: #330; font-size: 10px; padding: 0; margin: 0;}
+
+#scam_content h1 {
+	font-size: 10px;
+	font-weight: bold;
+	color: #600;
+	padding-bottom: 10px;
+}
+
+#scam_submit {
+	float: right;
+	margin-right: 60px;
+}
+
+#contact_form {
+	table-layout: fixed;
+	width: 100%;
+}
+
+#contact_form tr td:first-child {
+	width: 60%;
+}
+
+#password_content,
+#feedback_content,
+#bug_content { 
+	font-family: Verdana, Arial, Helvetica, sans-serif; color: #330; font-size: 10px; padding: 0; margin: 0;
+}
+
+#feedback_submit {
+	float: right;
+}
+
+/* --------------------- CREDITS --------------------- */
+
+.credits_content { 
+	padding: 5px 32px 30px 24px;
+}
+
+#credits_content_bottom {
+	width: 250px;
+}
+
+/* --------------------- SHOP --------------------- */
+
+.shop_content { 
+	padding: 5px 32px 170px 24px;
+}
