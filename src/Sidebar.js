@@ -2,9 +2,6 @@ import { Route, Routes, Link } from "react-router-dom";
 
 
 function Sidebar() {
-	function openHotel() {
-		window.open('hotel.js', '', 'height=580,width=750');
-	}
   return (
     <>
     		<div id="sidebar">
@@ -12,7 +9,7 @@ function Sidebar() {
 				<div className="box_blue_mid">
 					<p id="habbos_online">Habbos in the hotel:</p>
 
-					<a onClick={() => window.open("hotel.js", "Popup","toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30")}>
+					<a onClick={() => window.open("hotel/", "Popup","toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30")}>
 						<p id="check_in">Check in!</p>
 					</a>
 
