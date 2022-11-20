@@ -1,4 +1,4 @@
-import { Route, Routes, Link, NavLink, Outlet } from "react-router-dom";
+import { Route, Routes, NavLink } from "react-router-dom";
 
 import HabboWay from './safety/habboway.js';
 import PrivacyPledge from './safety/privacypledge.js';

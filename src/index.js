@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Route, Routes, NavLink, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, NavLink } from "react-router-dom";
 
 import ScrollToTop from './ScrollToTop.js';
 import Sidebar from './Sidebar.js';
@@ -17,7 +17,7 @@ import Help from './pages/help.js';
 import Credits from './pages/credits.js';
 import Shop from './pages/shop.js';
 
-import HHW_Latest from './pages/community/hhw_latest.js';
+import Hhw_latest from './pages/community/hhw_latest.js';
 
 const root = ReactDOM.createRoot(document.getElementById('main'));
 
@@ -50,7 +50,7 @@ root.render(
           <Route path="/credits" element={<Credits />}></Route>
           <Route path="/shop" element={<Shop />}></Route>
 
-          <Route path="/community/hhw_latest" element={<HHW_Latest />}></Route>
+          <Route path="/community/hhw_latest" element={<Hhw_latest />}></Route>
         </Routes>
         <p style={{textAlign: 'center', color: '#69C', paddingTop: '10px'}}>
 			    All rights including trademarks, copyright and database rights in this website and its

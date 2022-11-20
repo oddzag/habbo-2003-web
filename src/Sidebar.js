@@ -1,4 +1,6 @@
-import { Route, Routes, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+import Hotel from './pages/hotel.js';
 
 
 function Sidebar() {
@@ -9,7 +11,7 @@ function Sidebar() {
 				<div className="box_blue_mid">
 					<p id="habbos_online">Habbos in the hotel:</p>
 
-					<a onClick={() => window.open("hotel/", "Popup","toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30")}>
+					<a onClick={() => window.open(<Hotel />, "Popup", "toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=740, height=540, top=30")}>
 						<p id="check_in">Check in!</p>
 					</a>
 
@@ -25,7 +27,7 @@ function Sidebar() {
 						You'll need Shockwave to check in to the hotel, but don't worry - it's free (and safe) to download.
 						<br /><br />
 						<center>
-							<Link to="/help/shockwave"><img src="/img/shockwave.gif" /></Link>
+							<Link to="/help/shockwave"><img src="/img/shockwave.gif" alt="" /></Link>
 						</center>
 					</p>
 				</div>
@@ -33,8 +35,8 @@ function Sidebar() {
 
 				<div className="box_blue_top"></div>
 				<div className="box_blue_mid">
-					<div id="iac"></div>
-					<div id="bt"></div>
+					<div id="iac" style={{marginBottom: '8px'}}></div>
+					<div id="bt" style={{marginBottom: '8px'}}></div>
 					<div id="bob2"></div>
 				</div>
 				<div className="box_blue_footer"></div>
@@ -44,6 +46,7 @@ function Sidebar() {
 					<Link to="/help/safety/privacy">Privacy Policy</Link>
 					<Link to="">Habbo Ltd</Link>
 					<Link to="">Sulake Labs</Link>
+					<a href="https://github.com/oddzag/habbo-2003" target="_blank" rel="noreferrer">Github</a>
 				</div>
 			</div>
     </>

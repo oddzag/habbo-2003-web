@@ -1,4 +1,4 @@
-import { Route, Routes, Link, NavLink, Outlet } from "react-router-dom";
+import { Route, Routes, NavLink } from "react-router-dom";
 
 import General from './faqs/general.js';
 import Moderation from './faqs/moderation.js';

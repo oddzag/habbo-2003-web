@@ -1,5 +1,3 @@
-import { Route, Routes, Link } from "react-router-dom"
-
 function News() {
   return (
     <>

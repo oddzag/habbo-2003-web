@@ -1,4 +1,4 @@
-import { Route, Routes, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 function Home() {
   return (
@@ -9,7 +9,7 @@ function Home() {
       <div className="home">
         <div className="home_banner">
           <div id="home_banner"></div>
-          <a onClick={() => window.open("hotel.js", "Popup","toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30")}>
+          <a onClick={() => window.open("/hotel/", "Popup","toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=740, height=540, top=30")}>
             <div id="check_in_button"></div>
           </a>
         </div>

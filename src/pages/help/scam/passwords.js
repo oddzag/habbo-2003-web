@@ -1,5 +1,3 @@
-import { NavLink, Link } from "react-router-dom";
-
 function PasswordScam() {
   return (
     <>

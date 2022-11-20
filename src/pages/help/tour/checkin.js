@@ -1,4 +1,4 @@
-import { Route, Routes, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 function CheckIn() {
   return (
@@ -11,7 +11,7 @@ function CheckIn() {
         There are no modern browsers that support Shockwave. The easiest option is to
         install or use the portable version of a fork of Basilisk Browser, made by
         Quackster on RaGEZONE.<br /><br />
-        Click <a href="https://forum.ragezone.com/f353/portable-browser-with-flash-shockwave-1192727/" target="_blank">here</a> for more information.
+        Click <a href="https://forum.ragezone.com/f353/portable-browser-with-flash-shockwave-1192727/" target="_blank" rel="noreferrer">here</a> for more information.
       </p>
 
       <div class="content_ruler"></div>
@@ -19,7 +19,7 @@ function CheckIn() {
       <p>
         <b>Checking in for the first time</b><br />
         Once you've done that you're ready to check in to the hotel. 
-        Click on <a>'check in'</a> and a new window will open. When the 
+        Click on <a onClick={() => window.open("/hotel/", "Popup","toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=740, height=540, top=30")}>'check in'</a> and a new window will open. When the 
         'hotel loading' bar reaches 100%, you'll see the hotel from the outside.
       </p>
 

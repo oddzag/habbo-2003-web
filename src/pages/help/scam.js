@@ -1,4 +1,4 @@
-import { Routes, Route, NavLink, Link } from "react-router-dom";
+import { Routes, Route, NavLink } from "react-router-dom";
 
 import ScamBusters from './scam/scambusters.js';
 import Scammed from './scam/scammed.js';

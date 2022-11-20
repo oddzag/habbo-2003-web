@@ -1,4 +1,4 @@
-import { Route, Routes, Link, NavLink, Outlet } from "react-router-dom";
+import { Route, Routes, NavLink } from "react-router-dom";
 
 import WhatIs from './help/whatis.js';
 import CheckIn from './help/tour/checkin.js';

@@ -102,6 +102,13 @@
 	float: left;
 }
 
+#basilisk {
+	background-image: url('../img/basilisk.png');
+	width: 64px;
+	height: 64px;
+	float: right;
+}
+
 #checkin_one {
 	background-image: url('../img/checkin_one.gif');
 	width: 194px;

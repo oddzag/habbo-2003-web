@@ -1,4 +1,4 @@
-import { Route, Routes, Link, NavLink, Outlet } from "react-router-dom";
+import { Route, Routes, NavLink } from "react-router-dom";
 
 import Feedback from './contact/feedback.js';
 import Password from './contact/password.js';
