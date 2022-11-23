@@ -9,9 +9,8 @@ contained.
 
 <h2>:hammer: To-do</h2>
 <ul>
-  <li>Finish building out static pages</li>
-  <li>Rectify issue with links in static public layout</li>
-  <li>Possibly refractor subpage linking method method with components instead of nested routing and external files</li>
+  <li>Configure pop-out hotel window within scope of app</li>
+  <li>Possibly refractor subpage linking method with components instead of nested routing and external files</li>
 </ul>
   
 To view this site live, visit <a href="https://habbo.gs">Habbo.gs</a>
