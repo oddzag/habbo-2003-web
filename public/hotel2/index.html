@@ -11,8 +11,8 @@
 		function checkBrowser(){
 			let userAgent = navigator.userAgent;
 
-            if (userAgent.match(/basilisk/i))
-                console.log("hello");
+            if (!(userAgent.match(/basilisk/i)))
+                window.load("/hotel/loader.html");
             else
                 console.log("hello2");
 		 };
