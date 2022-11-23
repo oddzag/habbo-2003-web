@@ -14,7 +14,7 @@ contained.
   
 To view this site live, visit <a href="https://habbo.gs">Habbo.gs</a>
 
-<h2>:hammer: To-do - svr</h2>
+<h2>:hammer: To-do - <a href="https://github.com/oddzag/habbo-2003-svr">svr</a></h2>
 <ul>
   <li>???? no idea</li>
 </ul>
