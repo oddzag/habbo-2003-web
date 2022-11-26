@@ -19,7 +19,7 @@ function CheckIn() {
       <p>
         <b>Checking in for the first time</b><br />
         Once you've done that you're ready to check in to the hotel. 
-        Click on <a onClick={() => window.open("/hotel/", "Popup","toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=740, height=540, top=30")}>'check in'</a> and a new window will open. When the 
+        Click on <Link to="/hotel">'check in'</Link> and a new window will open. When the 
         'hotel loading' bar reaches 100%, you'll see the hotel from the outside.
       </p>
 

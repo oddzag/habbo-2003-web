@@ -9,9 +9,9 @@ function Home() {
       <div className="home">
         <div className="home_banner">
           <div id="home_banner"></div>
-          <a onClick={() => window.open("/hotel/", "Popup","toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=740, height=540, top=30")}>
+          <Link to="/hotel">
             <div id="check_in_button"></div>
-          </a>
+          </Link>
         </div>
 
         <div className="home_left">

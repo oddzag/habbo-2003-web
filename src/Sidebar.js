@@ -1,6 +1,9 @@
-import { Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
+import NewWindow from 'react-new-window';
+import Hotel from "./Hotel.js";
 
 function Sidebar() {
+
   return (
     <>
 		<div id="sidebar">
@@ -8,7 +11,7 @@ function Sidebar() {
 			<div className="box_blue_mid">
 				<p id="habbos_online">Habbos in the hotel:</p>
 
-				<a onClick={() => window.open("/hotel", "Popup", "toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=650, height=400, top=30")}>
+				<a onClick={(e) => {e.preventDefault(); window.open('/hotel', 'popup', 'width=720,height=540')}}>
 					<p id="check_in">Check in!</p>
 				</a>
 
@@ -23,9 +26,7 @@ function Sidebar() {
 					<br /><br />
 					You'll need Shockwave to check in to the hotel, but don't worry - it's free (and safe) to download.
 					<br /><br />
-					<center>
-						<Link to="/help/shockwave"><img src="/img/shockwave.gif" alt="" /></Link>
-					</center>
+					<Link to="/help/shockwave"><img src="/img/shockwave.gif" alt="" style={{margin: '0 auto'}} /></Link>
 				</p>
 			</div>
 			<div className="box_yellow_footer"></div>

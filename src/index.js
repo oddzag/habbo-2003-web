@@ -18,6 +18,7 @@ import Credits from './pages/credits.js';
 import Shop from './pages/shop.js';
 
 import Hhw_latest from './pages/community/hhw_latest.js';
+import Hotel from './Hotel.js';
 
 const root = ReactDOM.createRoot(document.getElementById('main'));
 
@@ -51,6 +52,7 @@ root.render(
           <Route path="/shop" element={<Shop />}></Route>
 
           <Route path="/community/hhw_latest" element={<Hhw_latest />}></Route>
+          <Route path="/hotel" element={<Hotel />}></Route>
         </Routes>
         <p style={{textAlign: 'center', color: '#69C', paddingTop: '10px'}}>
 			    All rights including trademarks, copyright and database rights in this website and its
@@ -63,3 +65,4 @@ root.render(
   </React.StrictMode>
 );
 
+export default root;
