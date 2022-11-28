@@ -11,9 +11,9 @@ function Sidebar() {
 			<div className="box_blue_mid">
 				<p id="habbos_online">Habbos in the hotel:</p>
 
-				<a onClick={(e) => {e.preventDefault(); window.open('/hotel', 'popup', 'width=720,height=540')}}>
+				<Link onClick={() => {window.open('/hotel', 'popup', 'width=720,height=540')}}>
 					<p id="check_in">Check in!</p>
-				</a>
+				</Link>
 
 			</div>
 			<div className="box_blue_footer"></div>

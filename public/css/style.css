@@ -16,7 +16,7 @@ ul li { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; }
 
 .links { font-family: Verdana, Arial, Helvetica, sans-serif; color: #FF6;}
 
-.index {
+#index {
 	display: grid;
 	grid-template-columns: .30fr 1000px 10000px;
 	grid-template-rows: .2fr 1fr;
