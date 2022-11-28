@@ -82,9 +82,9 @@ root.render(
     <Routes>
       <Route path="/*" index element={<Main />}></Route>
       <Route path="/hotel" element={<Hotel />}></Route>
-      //Because this element is rendered in the popup window, in a prod build, the /hotel
-      //path is handled by nginx, which throws a 404. I added a location directive in the
-      //nginx server block just for /hotel. This keeps it inside the scope of the react app
+        //Because this element is rendered in the popup window, in a prod build, the /hotel
+        //path is handled by nginx, which throws a 404. I added a location directive in the
+        //nginx server block just for /hotel. This keeps it inside the scope of the react app
     </Routes>
   </Router>
 );

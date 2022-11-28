@@ -1,6 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
-import NewWindow from 'react-new-window';
-import Hotel from "./Hotel.js";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
 
@@ -26,7 +24,7 @@ function Sidebar() {
 					<br /><br />
 					You'll need Shockwave to check in to the hotel, but don't worry - it's free (and safe) to download.
 					<br /><br />
-					<Link to="/help/shockwave"><img src="/img/shockwave.gif" alt="" style={{margin: '0 auto'}} /></Link>
+					<Link to="/help/shockwave"><div id="shockwave"></div></Link>
 				</p>
 			</div>
 			<div className="box_yellow_footer"></div>
