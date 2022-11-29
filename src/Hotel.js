@@ -27,11 +27,37 @@ function Loader() {
      )
 }
 
+function NoShockwave () {
+     return (
+          <>
+               <link rel="stylesheet" href="../css/style.css"  type="text/css" />
+               <link rel="stylesheet" href="../css/img.css"  type="text/css" />
+               <div id="main_top"></div>
+               <div id="main_mid">
+                    <div id="no_shockwave">
+                         <h1>Shockwave is required</h1>
+                         <div id="shockwave_maintenance"></div>
+                         <p>
+                              Hello and welcome to Habbo Hotel! In order to enter the hotel, you must have Adobe Shockwave installed
+                              and enabled. You <b>cannot</b> use Shockwave on modern browsers (Chrome, Mozilla, etc), at least
+                              not without extensive workarounds.
+                              <br /><br />
+                              The simplest solution is use Basilisk Browser which you can download <a href="/Basilisk.zip">here</a>.
+                              Read more information on this browser (which is a fork of Mozilla) by 
+                              clicking <a href="https://forum.ragezone.com/f353/portable-browser-with-flash-shockwave-1192727/" target="_blank" rel="noreferrer">here</a>.
+                         </p>     
+                    </div>
+               </div>
+               <div id="main_footer"></div>
+          </>
+     )
+}
+
 function Hotel() {
           if(navigator.userAgent.match(/basilisk/i))
                return (<Loader />)
           else
-               return("you don't have basilisk. i'll beautify this later")
+               return(<NoShockwave />)
 }
 
 export default Hotel;

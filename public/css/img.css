@@ -115,6 +115,13 @@
 	float: right;
 }
 
+#shockwave_maintenance {
+	background-image: url('../img/shockwave_maintenance.gif');
+	width: 113px;
+	height: 100px;
+	float: right;
+}
+
 #checkin_one {
 	background-image: url('../img/checkin_one.gif');
 	width: 194px;

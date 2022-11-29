@@ -537,3 +537,9 @@ ul li { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; }
 .shop_content { 
 	padding: 5px 32px 170px 24px;
 }
+
+/* --------------------- SHOCKWAVE CHECKER --------------------- */
+
+#no_shockwave {
+	padding: 0 10px;
+}
