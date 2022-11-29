@@ -40,6 +40,12 @@
 	float: right;
 }
 
+#funkyfriday {
+	background-image: url('../img/funkyfriday.gif');
+	width: 119px;
+	height: 20px;
+}
+
 #dancer {
 	background-image: url('../img/dancer.gif');
 	width: 76px;

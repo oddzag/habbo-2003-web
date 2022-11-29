@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import openHotel from './index.js';
 
 function Sidebar() {
 
@@ -9,7 +10,7 @@ function Sidebar() {
 			<div className="box_blue_mid">
 				<p id="habbos_online">Habbos in the hotel:</p>
 
-				<Link onClick={() => {window.open('/hotel', 'popup', 'width=720,height=540')}}>
+				<Link onClick={openHotel}>
 					<p id="check_in">Check in!</p>
 				</Link>
 

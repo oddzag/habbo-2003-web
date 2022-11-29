@@ -1,4 +1,4 @@
-function Hotel() {
+function Loader() {
      return (
      <div align='center'>
           <object classid='clsid:166B1BCA-3F9C-11CF-8075-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/director/sw.cab#version=10,8,5,1,0' id='habbo' width='720px' height='540px'>
@@ -25,7 +25,13 @@ function Hotel() {
           </object>
       </div>
      )
+}
 
+function Hotel() {
+          if(navigator.userAgent.match(/basilisk/i))
+               return (<Loader />)
+          else
+               return("you don't have basilisk. i'll beautify this later")
 }
 
 export default Hotel;

@@ -37,7 +37,7 @@ function Hobba() {
                   </tr>
               </td>
             </table>
-            <input type="submit" value="Submit" style={{float: 'right', margin: '0 50px 0 0'}}></input>
+            <button type="button" style={{float: 'right'}}>Submit</button>
           </form>
           <br />
           Fill in all the fields in the form.

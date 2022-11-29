@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import openHotel from '../../../index.js';
 
 function CheckIn() {
   return (
@@ -19,7 +20,7 @@ function CheckIn() {
       <p>
         <b>Checking in for the first time</b><br />
         Once you've done that you're ready to check in to the hotel. 
-        Click on <Link to="/hotel">'check in'</Link> and a new window will open. When the 
+        Click on <Link onClick={openHotel}>'check in'</Link> and a new window will open. When the 
         'hotel loading' bar reaches 100%, you'll see the hotel from the outside.
       </p>
 

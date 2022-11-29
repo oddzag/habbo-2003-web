@@ -24,7 +24,7 @@ function Password() {
               </td>
             </table>
             <div class="content_ruler"></div>
-            <input type="submit" value="Submit" style={{float: 'right'}}></input>
+            <button type="button" style={{float: 'right'}}>Submit</button>
           </form>
           <br />
           Fill in all the fields in the form.

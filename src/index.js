@@ -36,7 +36,7 @@ function Main() {
 				</div>
 			</div>
 
-      <ScrollToTop />
+      <ScrollToTop /> {/*this can go anywhere tbh*/}
       
       <div id="main">
         <Sidebar />
@@ -48,6 +48,7 @@ function Main() {
               <NavLink to="/shop" id="nav_shop"></NavLink>
             </div>
 
+            {/*define routes for general content, this is the stage for all content*/}
             <Routes>
               {/* Main Nav */}
               <Route path="/" index element={<Home />}></Route>
@@ -65,6 +66,7 @@ function Main() {
 
               <Route path="/community/hhw_latest" element={<Hhw_latest />}></Route>
             </Routes>
+
             <p style={{textAlign: 'center', color: '#69C', paddingTop: '10px'}}>
               All rights including trademarks, copyright and database rights in this website and its
               contents are owned by or licensed to Habbo Ltd. All rights reserved. Powered by Sulake technology.
@@ -76,15 +78,18 @@ function Main() {
   )
 }
 
+export default function openHotel() {
+  window.open('/hotel', 'popup', 'width=740,height=550,scrollbars=no');
+}
 
+  {/*define higher level routes, from here, external windows can be loaded with targeted components in app scope*/}
 root.render(
   <Router>
     <Routes>
       <Route path="/*" index element={<Main />}></Route>
       <Route path="/hotel" element={<Hotel />}></Route>
-        //Because this element is rendered in the popup window, in a prod build, the /hotel
-        //path is handled by nginx, which throws a 404. I added a location directive in the
-        //nginx server block just for /hotel. This keeps it inside the scope of the react app
+        //hotel path is originally handled by nginx, which throws a 404. add a location directive in
+        //server block just for /hotel. This keeps it inside scope of app
     </Routes>
   </Router>
 );
