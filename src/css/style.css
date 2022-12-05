@@ -1,3 +1,13 @@
+* {
+    image-rendering: optimizeSpeed; /*                     */
+    image-rendering: -moz-crisp-edges; /* Firefox             */
+    image-rendering: -o-crisp-edges; /* Opera               */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and Safari) */
+    image-rendering: pixelated; /* Chrome as of 2019   */
+    image-rendering: optimize-contrast; /* CSS3 Proposed       */
+    -ms-interpolation-mode: nearest-neighbor; /* IE8+                */
+  }
+
 body { background-image: url(../img/bg.png); background-repeat: repeat;}
 
 p { font-family: Verdana, Arial, Helvetica, sans-serif; color: #330; font-size: 10px; padding: 0; margin: 0; line-height: 12px;}

@@ -56,22 +56,22 @@ function Home() {
 
           <div id="box_gold_top"></div>
           <div id="box_gold_mid">
-            <p style={{color: '#5D1208', padding: '10px 10px'}}>
               <div id="general" style={{float: 'right'}}></div>
-              <b>Habbo Hotel Happenings</b><br />
-              Want a year's free Habbo Club?! We tell you how..<br />
-              <b style={{color: '#330'}}>July 31, 2003</b>
-            </p>
+              <p style={{color: '#5D1208', padding: '10px 10px'}}>
+                <b>Habbo Hotel Happenings</b><br />
+                Want a year's free Habbo Club?! We tell you how..<br />
+                <b style={{color: '#330'}}>July 31, 2003</b>
+              </p>
           </div>
           <div id="box_gold_footer"></div>
 
           <div id="box_brown_top"></div>
           <div id="box_brown_mid">
-            <p style={{color: '#5D1208', padding: '5px 5px 5px 10px'}}>
               <div id="funkyfriday"></div>
-              Win a chance to visit the Habbo office on Meet The Manager day!<br /><br />
-              <u>Click here...</u>
-            </p>
+                <p style={{color: '#5D1208', padding: '5px 5px 5px 10px'}}>
+                Win a chance to visit the Habbo office on Meet The Manager day!<br /><br />
+                <u>Click here...</u>
+              </p>
           </div>
           <div id="box_brown_footer"></div>
         </div>

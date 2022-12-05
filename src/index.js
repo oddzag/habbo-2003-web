@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes, NavLink } from "react-router-dom";
 
+import './css/style.css';
+import './css/img.css';
+
 import ScrollToTop from './ScrollToTop.js';
 import Sidebar from './Sidebar.js';
 
@@ -26,11 +29,11 @@ function Main() {
   return (
     <>
     <div id="index">
-			<div class="logo">
+			<div className="logo">
 				<div id="habbo_logo"></div>
 			</div>
 
-			<div class="banner">
+			<div className="banner">
 				<div id="banner_box">
 					<div id="banner_insert"></div>
 				</div>
@@ -42,8 +45,8 @@ function Main() {
         <Sidebar />
           <div id="main_content">
             <div id="nav">
-              <NavLink to="/" id="nav_home"></NavLink>
-              <NavLink to="/help" id="nav_help"></NavLink>
+              <NavLink to="./" id="nav_home"></NavLink>
+              <NavLink to="help" id="nav_help"></NavLink>
               <NavLink to="/credits" id="nav_credits"></NavLink>
               <NavLink to="/shop" id="nav_shop"></NavLink>
             </div>
@@ -51,7 +54,7 @@ function Main() {
             {/*define routes for general content, this is the stage for all content*/}
             <Routes>
               {/* Main Nav */}
-              <Route path="/" index element={<Home />}></Route>
+              <Route path="/*" index element={<Home />}></Route>
               <Route path="/help/*" element={<Help />}></Route>
                   <Route path="/help/safety/*" index element={<Safety />}></Route>
                   <Route path="/help/parents/" index element={<Parents />}></Route>
@@ -79,12 +82,12 @@ function Main() {
 }
 
 export default function openHotel() {
-  window.open('/hotel', 'popup', 'width=740,height=550,scrollbars=no');
+  window.open('/2003/hotel', 'popup', 'width=740,height=550,scrollbars=no');
 }
 
   {/*define higher level routes, from here, external windows can be loaded with targeted components in app scope*/}
 root.render(
-  <Router>
+  <Router basename="/2003">
     <Routes>
       <Route path="/*" index element={<Main />}></Route>
       <Route path="/hotel" element={<Hotel />}></Route>

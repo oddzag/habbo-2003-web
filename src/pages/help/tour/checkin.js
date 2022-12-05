@@ -5,7 +5,7 @@ function CheckIn() {
   return (
     <>
       <h1>Visiting Habbo Hotel for the first time</h1>
-      <div class="content_ruler"></div>
+      <div className="content_ruler"></div>
       <p>
         <b>Installing Shockwave</b><br />
         Before you can check into the hotel, you'll need to download Shockwave.
@@ -15,7 +15,7 @@ function CheckIn() {
         Click <a href="https://forum.ragezone.com/f353/portable-browser-with-flash-shockwave-1192727/" target="_blank" rel="noreferrer">here</a> for more information.
       </p>
 
-      <div class="content_ruler"></div>
+      <div className="content_ruler"></div>
       <div id="checkin_one"></div>
       <p>
         <b>Checking in for the first time</b><br />
@@ -24,7 +24,7 @@ function CheckIn() {
         'hotel loading' bar reaches 100%, you'll see the hotel from the outside.
       </p>
 
-      <div class="sub_content_ruler"></div>
+      <div className="sub_content_ruler"></div>
 
       <p>
         <b>Creating your Habbo</b><br />
@@ -37,7 +37,7 @@ function CheckIn() {
       </p>
 
       <div id="checkin_three"></div>
-      <div class="sub_content_ruler"></div>
+      <div className="sub_content_ruler"></div>
       <p>
         <b>Keeping your Habbo secure</b><br />
         Habbo accounts are very safe as long as you have a good password and keep
@@ -66,7 +66,7 @@ function CheckIn() {
         for every Habbo's needs - if we have lots of French Habbos for example,
         we might decide to open a Habbo Hotel in France!
 
-        <div class="sub_content_ruler"></div>
+        <div className="sub_content_ruler"></div>
         <Link to="/help/tour/moving" style={{fontWeight: 'bold'}}>Moving around and chatting {">"}</Link>
       </p>
     </>
