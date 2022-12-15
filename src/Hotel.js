@@ -11,7 +11,7 @@ function Loader() {
                     pluginspage='http://www.macromedia.com/shockwave/download/'
                     sw2='connection.info.host=15.204.199.8;connection.info.port=12321'
                     sw4='connection.mus.host=15.204.199.8;connection.mus.port=12322'
-                    sw3='client.reload.url=https://habbo.gs/'
+                    sw3='client.reload.url=https://habbo.gs/2003/hotel'
                     sw1='site.url=https://www.habbo.gs;url.prefix=https://www.habbo.gs'
                     sw5='external.variables.txt=./external_variables.txt;external.texts.txt=./external_texts.txt'>
                </embed>

@@ -10,21 +10,93 @@
 
 body { background-image: url(../img/bg.png); background-repeat: repeat;}
 
-p { font-family: Verdana, Arial, Helvetica, sans-serif; color: #330; font-size: 10px; padding: 0; margin: 0; line-height: 12px;}
+p { font-family: Volter; color: #330; font-size: 9px; padding: 0; margin: 0; line-height: 12px;}
 
-h1 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; color: white; font-weight: bold; padding: 0; margin: 20px 0;}
+h1 { font-family: Volter; font-size: 14px; color: white;}
 
-h3 { color: #600; font-size: 10px; margin: 10px 0;}
+h3 { color: #600; font-size: 9px;; margin: 10px 0;}
 
-h5 	{ font-size: 11px; font-weight: bold; color: #330; margin: 0 0 10px 0;}
+h5 	{ font-size: 11px; color: #330; margin: 0 0 10px 0;}
 
 a { cursor: pointer; }
 
+p.b { font-family: Volter-Bold; font-size: 9px; margin: 0; padding: 0; display: inline-block;}
+
 p a { color:#FF6; text-decoration: underline; }
 
-ul li { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; }
+ul li { font-family: Volter; font-size: 9px; }
 
-.links { font-family: Verdana, Arial, Helvetica, sans-serif; color: #FF6;}
+.links { font-family: Volter; color: #FF6;}
+
+@font-face {
+    font-family: 'Volter';
+    src: local('Volter'), url(../fonts/Volter.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Volter-Bold';
+    src: local('Volter-Bold'), url(../fonts/Volter-Bold.ttf) format('truetype');
+}
+
+.sticky {
+    width: 185px;
+    height: 178px;
+    position: fixed;
+}
+
+.sticky p {
+    margin: 11px 6px 19px 6px;
+}
+
+.sticky_head {
+    width: 183px;
+    height: 19px;
+}
+
+.sticky_bg_b,
+.sticky_bg_g,
+.sticky_bg_p,
+.sticky_bg_y {
+    background-repeat: no-repeat;
+    width: 185px;
+    height: 178px;
+}
+
+.sticky_bg_b {background-image: url(../img/sticky/sticky_bg_b.png);}
+.sticky_bg_g {background-image: url(../img/sticky/sticky_bg_g.png);}
+.sticky_bg_p {background-image: url(../img/sticky/sticky_bg_p.png);}
+.sticky_bg_y {background-image: url(../img/sticky/sticky_bg_y.png);}
+
+.sticky_bin {
+    background-image: url(../img/sticky/sticky_bin.png);
+    width: 9px;
+    height: 10px;
+    display: inline-block;
+    margin: 0 8px 0 8px;
+}
+
+.sticky_b,
+.sticky_g,
+.sticky_p,
+.sticky_y {
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.sticky_b {background-image: url(../img/sticky/sticky_b.png);}
+.sticky_g {background-image: url(../img/sticky/sticky_g.png);}
+.sticky_p {background-image: url(../img/sticky/sticky_p.png);}
+.sticky_y {background-image: url(../img/sticky/sticky_y.png);}
+
+.sticky_exit {
+    background-image: url(../img/sticky/sticky_exit.png);
+    width: 10px;
+    height: 10px;
+    float: right;
+    margin: 5px 5px 0 0;
+}
 
 #index {
 	display: grid;
@@ -98,23 +170,20 @@ ul li { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; }
 }
 
 #habbos_online {
-	font-weight: bold;
 	color: #96B7CC;
 	text-align: center;
 }
 
 #check_in {
-	font-weight: bold;
 	color: #FF9;
 	text-align: center;
 	text-decoration: underline;
 }
 
 #check_in_prob {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px; 
+	font-family: Volter;
+	font-size: 9px;
 	color: white; 
-	font-weight: bold;
 	margin: 0 0 10px 13px;
 }
 
@@ -158,9 +227,8 @@ ul li { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; }
 }
 
 #sidebar_links a {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	font-weight: bold;
+	font-family: Volter;
+	font-size: 9px;
 	color: #69C;
 	display: block;
 	padding-bottom: 3px;
@@ -202,8 +270,8 @@ ul li { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; }
 }
 
 #main_copyright {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px;
+	font-family: Volter;
+	font-size: 9px;;
 	text-align: center;
 	color: #69C;
 }
@@ -420,7 +488,7 @@ ul li { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; }
 
 #subnav_one a,
 #subnav_two a {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-family: Volter;
 	text-decoration: none;
 	color: #000;
 }
@@ -431,7 +499,7 @@ ul li { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; }
 }
 
 #subnav_two a {
-	font-size: 10px;
+	font-size: 9px;;
 	margin-right: 20px;
 }
 
@@ -443,7 +511,6 @@ ul li { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; }
 #subnav_one a.active,
 #subnav_two a.active {
 	color: #FFF;
-	font-weight: bold;
 }
 
 #navi_ruler {
@@ -459,23 +526,22 @@ ul li { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; }
 }
 
 #tour_links a {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	font-weight: bold;
+	font-family: Volter;
+	font-size: 9px;
 	color: #FF6;
 	display: block;
 	padding-bottom: 10px;
 }
 
 #habboway_must_not {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px;
+	font-family: Volter;
+	font-size: 9px;;
 	color: #900;
 }
 
 #habboway_should {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px;
+	font-family: Volter;
+	font-size: 9px;;
 	color: #060;
 }
 
@@ -499,11 +565,10 @@ ul li { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; }
 	width: 43%;
 }
 
-#scam_content { font-family: Verdana, Arial, Helvetica, sans-serif; color: #330; font-size: 10px; padding: 0; margin: 0;}
+#scam_content { font-family: Volter; color: #330; font-size: 9px; padding: 0; margin: 0;}
 
 #scam_content h1 {
-	font-size: 10px;
-	font-weight: bold;
+	font-size: 9px;
 	color: #600;
 	padding-bottom: 10px;
 }
@@ -525,7 +590,7 @@ ul li { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; }
 #password_content,
 #feedback_content,
 #bug_content { 
-	font-family: Verdana, Arial, Helvetica, sans-serif; color: #330; font-size: 10px; padding: 0; margin: 0;
+	font-family: Volter; color: #330; font-size: 9px;; padding: 0; margin: 0;
 }
 
 #feedback_submit {

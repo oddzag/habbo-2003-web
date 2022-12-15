@@ -16,7 +16,7 @@ function Home() {
         </div>
 
         <div className="home_left">
-          <h1 style={{margin: '0 0 10px 0px'}}>Welcome to Habbo Hotel</h1>
+          <h1>Welcome to Habbo Hotel</h1>
           <p>
             Habbo Hotel is a virtual hotel where you can meet your friends and create a room of your own! <br />
             <Link to="/help">Read more</Link>
@@ -43,13 +43,13 @@ function Home() {
           <div id="headlines_top"></div>
           <div id="headlines_mid"> {/*these 3 boxes are just dummy text, they're not rendered dynamically*/}
             <p style={{padding: '10px 10px'}}>
-              <b style={{color: '#600'}}>July 29, 2003</b> Free Habbo Club for a year when you sign up for BT Broadband! Find out more here.
+              <p className="b"style={{color: '#600'}}>July 29, 2003</p> Free Habbo Club for a year when you sign up for BT Broadband! Find out more here.
               <br /><br />
-              <b style={{color: '#600'}}>July 30, 2003</b> IMPORTANT SAFETY NEWS and THE NAME GAME and more in this week's HabboHood Watch.
+              <p className="b"style={{color: '#600'}}>July 30, 2003</p> IMPORTANT SAFETY NEWS and THE NAME GAME and more in this week's HabboHood Watch.
               <br /><br />
-              <b style={{color: '#600'}}>July 21, 2003</b> Wallpaper, paint and flooring back in the Catalogue.
+              <p className="b"style={{color: '#600'}}>July 21, 2003</p> Wallpaper, paint and flooring back in the Catalogue.
               <br /><br />
-              <b style={{color: '#600'}}>July 21, 2003</b> The new Rare is in the Catalogue now!
+              <p className="b"style={{color: '#600'}}>July 21, 2003</p> The new Rare is in the Catalogue now!
             </p>
           </div>
           <div id="headlines_footer"></div>
@@ -58,9 +58,9 @@ function Home() {
           <div id="box_gold_mid">
               <div id="general" style={{float: 'right'}}></div>
               <p style={{color: '#5D1208', padding: '10px 10px'}}>
-                <b>Habbo Hotel Happenings</b><br />
+                <p className="b">Habbo Hotel Happenings</p><br />
                 Want a year's free Habbo Club?! We tell you how..<br />
-                <b style={{color: '#330'}}>July 31, 2003</b>
+                <p className="b"style={{color: '#330'}}>July 31, 2003</p>
               </p>
           </div>
           <div id="box_gold_footer"></div>

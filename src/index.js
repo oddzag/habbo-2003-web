@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Route, Routes, NavLink } from "react-router-do
 import './css/style.css';
 import './css/img.css';
 
+import Sticky from './Sticky.js';
+
 import ScrollToTop from './ScrollToTop.js';
 import Sidebar from './Sidebar.js';
 
@@ -77,6 +79,16 @@ function Main() {
           </div>
         </div>
       </div>
+
+      <Sticky message={
+        <>
+          Hello, this site is still a work in progress. 
+          Things might look bad or unfinished as I work on them.
+          <br /><br />
+          Enjoy!
+          <br /><br />
+          <div style={{float: 'right'}}>- oddzag</div>
+        </>} />
     </>
   )
 }
